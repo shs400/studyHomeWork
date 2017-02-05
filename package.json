@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/shs400/studyHomeWork/issues"
   },
-  "homepage": "https://github.com/shs400/studyHomeWork#readme"
+  "homepage": "https://github.com/shs400/studyHomeWork#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
 }
