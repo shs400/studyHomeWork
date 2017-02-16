@@ -1,0 +1,43 @@
+{{#if fruits}}
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+        <thead>
+            <tr>
+                <th class="mdl-data-table__cell--non-numeric">name</th>
+                <th class="mdl-data-table__cell--non-numeric">price</th>
+                <th class="mdl-data-table__cell--non-numeric">quantity</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td class="mdl-data-table__cell--non-numeric">합계</td>
+                <td colspan="2" class="mdl-data-table__cell--non-numeric">{{total}}</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            {{#each fruits}}
+            <tr>
+                <td class="mdl-data-table__cell--non-numeric">{{name}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{price}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{quantity}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+{{else}}
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+            <thead>
+                <tr>
+                    <th class="mdl-data-table__cell--non-numeric">날짜</th>
+                    <th class="mdl-data-table__cell--non-numeric">온도</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each weather}}
+                <tr>
+                    <td class="mdl-data-table__cell--non-numeric">{{newDate}}</td>
+                    <td class="mdl-data-table__cell--non-numeric">{{day}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+{{/if}}
